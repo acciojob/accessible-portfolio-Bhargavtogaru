@@ -1,28 +1,49 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-	<div class="container">
-		<header role ="heading">
-			<a href="/" class ="logo">Bhargav togaru</a>
-			<nav>
-				<ul>
-					<li><a role="listitem" href="#">home</a></li>
-					<li><a role="listitem" href="#">projects</a></li>
-					<li><a role="listitem" href="#">about</a></li>
-					<li><a role="listitem" href ="#">contact</a></li>	
-				</ul>
-			</nav>
-		</header>
-	</div>
-</body>
 
+    <!-- Navigation Bar -->
+    <nav role="navigation">
+        <ul role="list">
+            <li role="listitem"><a href="#about">About</a></li>
+            <li role="listitem"><a href="#projects">Projects</a></li>
+            <li role="listitem"><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Portfolio Header -->
+    <header>
+        <h1 role="heading">Bhargav's Portfolio</h1>
+    </header>
+
+    <!-- Profile Image -->
+    <section id="about">
+        <img src="profile.jpg" alt="Bhargav Togaru - Software Developer" role="img">
+        <p>Hello! I'm Bhargav, a passionate software developer specializing in backend development and data engineering.</p>
+    </section>
+
+    <!-- Project List -->
+    <section id="projects">
+        <h2 role="heading">Projects</h2>
+        <ul role="list">
+            <li role="listitem">Chat with CSV - A Python-based data analysis tool.</li>
+            <li role="listitem">Smart Cradle System - IoT-enabled baby monitoring system.</li>
+            <li role="listitem">HRMS Application - A Java & Spring Boot-based HR Management System.</li>
+        </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2 role="heading">Contact</h2>
+        <p>Email: <a href="mailto:bhargavtogaru2002@gmail.com">bhargavtogaru2002@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://linkedin.com/bhargav-togaru" target="_blank">Bhargav Togaru</a></p>
+    </section>
+
+</body>
 </html>
